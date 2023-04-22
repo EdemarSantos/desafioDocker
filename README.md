@@ -36,10 +36,18 @@ $ docker push edemarsantos/fullcycle
 O mesmo foi mudado para Público em
 https://hub.docker.com/repository/docker/edemarsantos/fullcycle/settings
 
-Assim, qualquer um pode baixar e executar a imagem com o comando
+Assim, qualquer um pode baixar e executar a imagem com o comando:
 
 ```sh
 $ docker run edemarsantos/fullcycle
 Hello, World!
 
+```
+
+Nota: A imagem possui 1,23 MB!
+
+```sh
+$ docker images | egrep 'fullcycle|SIZE'
+REPOSITORY                                       TAG               IMAGE ID       CREATED             SIZE
+edemarsantos/fullcycle                           latest            60a122228eff   About an hour ago   1.23MB
 ```
